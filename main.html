@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskmeeter.netlify.app</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'back': 'rgb(244, 247, 255)',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="m-10 bg-blue-200 rounded-xl p-10">
+    <div class="collapse collapse-arrow bg-base-400 border bg-[white]">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+        <div class="collapse-content text-sm bg-blue-100 m-5 p-2 rounded-lg">
+            <p>There are a lot of ways</p>
+            const d= document.getElementById('dec'); - Its by ID name <br>
+            const d= document.getElementByClass('dec'); - Its by Class name <br>
+            const d= document.getElementsByTagName('div'); - Its by Tag name <br>
+            const d= document.querySelector('.dec'); - Its by Single name <br>
+            const d= document.querySelectorAll('.dec'); - Its by All Query name <br>
+            etc....
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+        <div class="collapse-content text-sm bg-blue-100 m-5 p-2 rounded-l">
+            <div>
+                innerHTML : It returns the elements/contents inside of the html . All the p tag,li tag etc are included here .
+            </div>
+            <div>
+                innerHTML : It returns the text inside of the element . All the texts are included , its not going to work on Html tags.
+            </div>
+            <div>
+                textContent : Powerful than innerHTML . It can also work with hidden text but do not work on Html tags.
+            </div>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+        <div class="collapse-content text-sm bg-blue-100 m-5 p-2 rounded-l">When there is multiple child elements there is a event listener where it is added to the parent . Thats how we can easily access muiltiple child using delegation .</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+        <div class="collapse-content text-sm bg-blue-100 m-5 p-2 rounded-l">
+            <div>
+            document.getElementById('button4').
+           addEventListener('click',function(){
+           alert('Updated Successfully')})
+            </div>
+            <p>It happens when the event triggers and child moves towards the parent</p>
+            
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+        <div class="collapse-content text-sm bg-blue-100 m-5 p-2 rounded-l">
+            <div>
+                const newt = document.createElement('p');
+                By using createElement we are creating an element.
+            </div>
+            <div>
+                newt.classList.add("text-[10px]");
+                By using add ,we are adding any type of style. 
+            </div>
+            <div>
+                newt.classList.remove("text-[10px]");
+                By using add ,we are removing any type of style. 
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
