@@ -235,12 +235,19 @@
     addEventListener('click',function(){
         window.location.href = 'main.html'
     })
-
+    //tasks completion
+    let cou=0;
+    function got(){
+        if((cou)==6){
+            alert('congrats!!! you have completed the current task');
+    }
+    }
     //section 1
     document.getElementById('button1').
     addEventListener('click',function(){
-         alert('Board updated Successfully')
-        
+         alert('Board updated Successfully');
+            cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -266,6 +273,7 @@
             document.getElementById('clear').
             addEventListener('click',function(){
             document.getElementById('parent').innerHTML='';
+            
     })
     })
 
@@ -273,7 +281,8 @@
     document.getElementById('button2').
     addEventListener('click',function(){
          alert('Board updated Successfully')
-        
+            cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -299,6 +308,7 @@
             document.getElementById('clear').
             addEventListener('click',function(){
             document.getElementById('parent').innerHTML='';
+            
     })
     })
 
@@ -306,8 +316,9 @@
     // section3
     document.getElementById('button3').
     addEventListener('click',function(){
-         alert('Board updated Successfully')
-        
+         alert('Board updated Successfully');
+            cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -333,6 +344,7 @@
             document.getElementById('clear').
             addEventListener('click',function(){
             document.getElementById('parent').innerHTML='';
+            
     })
     })
 
@@ -340,7 +352,8 @@
     document.getElementById('button4').
     addEventListener('click',function(){
          alert('Board updated Successfully')
-        
+         cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -372,8 +385,9 @@
     // section5
     document.getElementById('button5').
     addEventListener('click',function(){
-         alert('Board updated Successfully')
-        
+         alert('Board updated Successfully');
+         cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -405,8 +419,9 @@
     // section6
     document.getElementById('button6').
     addEventListener('click',function(){
-         alert('Board updated Successfully')
-        
+         alert('Board updated Successfully');
+         cou++;
+            got();
             const d= document.getElementById('dec');
             let e = parseInt(d.textContent);
             if(e>0){
@@ -432,9 +447,11 @@
             document.getElementById('clear').
             addEventListener('click',function(){
             document.getElementById('parent').innerHTML='';
+
     })
     })
 
+  
 
   </script>
 </body>
